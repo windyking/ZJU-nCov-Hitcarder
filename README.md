@@ -25,3 +25,7 @@ forked from [Tishacy/ZJU-nCov-Hitcarder](https://github.com/Tishacy/ZJU-nCov-Hit
 # Sample Repository
 
 https://github.com/Long0x0/ZJU-nCov-Hitcarder-Sample
+
+
+这个版本还需要调试修改一下，现在虽然能运行，钉钉上也能发送打卡消息，但是会提示“打卡信息已变，请手动打卡”。
+
