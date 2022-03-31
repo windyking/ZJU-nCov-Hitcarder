@@ -77,7 +77,7 @@ class HitCarder(object):
         today = datetime.datetime.utcnow() + datetime.timedelta(hours=+8)
         return "%4d%02d%02d" % (today.year, today.month, today.day)
 
-      def check_form(self):
+    def check_form(self):
         """Get hitcard form, compare with old form """
         res = self.sess.get(self.base_url)
         html = res.content.decode()
