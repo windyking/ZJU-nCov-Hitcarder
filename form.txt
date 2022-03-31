@@ -1,4 +1,4 @@
- <ul>
+<ul>
                         <li>
                             <div class="text">
                                 <span>今日日期 Date<i style="display: none;" class="icon iconfont icon-shuoming"></i></span>
@@ -38,10 +38,7 @@
                             <div name="jzxgymqk" class="radio"><span>当前接种情况<i class="icon iconfont icon-shuoming"></i><em></em></span>
                                 <div>
                                     <div @click="info.jzxgymqk=1"><span :class="{active: info.jzxgymqk==1}"><i></i></span> <span>已接种第一针</span></div>
-<!--                                    <div @click="info.jzxgymqk=2"><span :class="{active: info.jzxgymqk==2}"><i></i></span> <span>已完成接种</span></div>-->
-                                    <div @click="info.jzxgymqk=4"><span :class="{active: info.jzxgymqk==4}"><i></i></span> <span>已接种第二针（已满6个月）</span></div>
-                                    <div @click="info.jzxgymqk=5"><span :class="{active: info.jzxgymqk==5}"><i></i></span> <span>已接种第二针（未满6个月）</span></div>
-                                    <div @click="info.jzxgymqk=6"><span :class="{active: info.jzxgymqk==6}"><i></i></span> <span>已接种第三针</span></div>
+                                    <div @click="info.jzxgymqk=2"><span :class="{active: info.jzxgymqk==2}"><i></i></span> <span>已完成接种</span></div>
                                     <div @click="info.jzxgymqk=3"><span :class="{active: info.jzxgymqk==3}"><i></i></span> <span>未接种</span></div>
                                 </div>
                             </div>
@@ -196,7 +193,7 @@
                                 <input v-model="info.area" readonly type="text" placeholder="点击获取地理位置 Click to get geographic location"></div>
                         </li>
 
-                        <li v-show="false && ipCtrl && sfzgn == 1" name="ip">
+                        <li v-show="ipCtrl && sfzgn == 1" name="ip">
                             <div class="text">
                                 <div class="hcqbtn-wrap">
                                     <select class="hcqbtn hcqbtn-danger" v-model='jtszd.myprovice' @change="handleChangeCity()">
