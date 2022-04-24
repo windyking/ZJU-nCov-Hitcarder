@@ -92,16 +92,6 @@
                             </div>
                         </li>
 
-<!--                        <li v-if="info.sfcyglq==1">-->
-<!--                            <div name="gllx" class="radio"><span>观察场所<i class="icon iconfont icon-shuoming"></i><em></em></span>-->
-<!--                                <div>-->
-<!--                                    <div @click="info.gllx='学校家属院'"><span :class="{active: info.gllx=='学校家属院'}"><i></i></span> <span>学校家属院</span></div>-->
-<!--                                    <div @click="info.gllx='学校集中隔离点'"><span :class="{active: info.gllx=='学校集中隔离点'}"><i></i></span> <span>学校集中隔离点</span></div>-->
-<!--                                    <div @click="info.gllx='杭州校外居住地'"><span :class="{active: info.gllx=='杭州校外居住地'}"><i></i></span> <span>杭州校外居住地</span></div>-->
-<!--                                    <div @click="info.gllx='杭外地区集中隔离点'"><span :class="{active: info.gllx=='杭外地区集中隔离点'}"><i></i></span> <span>杭外地区集中隔离点</span></div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </li>-->
                         <li v-if="info.sfcyglq==1">
                             <div class="text">
                                 <span>观察开始时间 The start time<i class="icon iconfont icon-shuoming"></i></span>
@@ -127,6 +117,23 @@
                         <li v-if="info.sfcxzysx==1">
                             <div class="multiText"><span>其他信息 Other information<i style="display: none;" class="icon iconfont icon-shuoming"></i></span>
                                 <div><textarea v-model="info.remark" name="remark" rows="" cols="" placeholder=""></textarea></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div name="campus" class="radio"><span>所在校区 Campus<i class="icon iconfont icon-shuoming"></i><em></em></span>
+                                <div>
+                                    <div @click="info.campus='紫金港校区'"><span :class="{active: info.campus==='紫金港校区'}"><i></i></span> <span>紫金港校区</span></div>
+                                    <div @click="info.campus='玉泉校区'"><span :class="{active: info.campus==='玉泉校区'}"><i></i></span> <span>玉泉校区</span></div>
+                                    <div @click="info.campus='西溪校区'"><span :class="{active: info.campus==='西溪校区'}"><i></i></span> <span>西溪校区</span></div>
+                                    <div @click="info.campus='华家池校区'"><span :class="{active: info.campus==='华家池校区'}"><i></i></span> <span>华家池校区</span></div>
+                                    <div @click="info.campus='之江校区'"><span :class="{active: info.campus==='之江校区'}"><i></i></span> <span>之江校区</span></div>
+                                    <div @click="info.campus='海宁校区'"><span :class="{active: info.campus==='海宁校区'}"><i></i></span> <span>海宁校区</span></div>
+                                    <div @click="info.campus='舟山校区'"><span :class="{active: info.campus==='舟山校区'}"><i></i></span> <span>舟山校区</span></div>
+                                    <div @click="info.campus='宁波校区'"><span :class="{active: info.campus==='宁波校区'}"><i></i></span> <span>宁波校区</span></div>
+                                    <div @click="info.campus='工程师学院'"><span :class="{active: info.campus==='工程师学院'}"><i></i></span> <span>工程师学院</span></div>
+                                    <div @click="info.campus='杭州国际科创中心'"><span :class="{active: info.campus==='杭州国际科创中心'}"><i></i></span> <span>杭州国际科创中心</span></div>
+                                    <div @click="info.campus='其他'"><span :class="{active: info.campus==='其他'}"><i></i></span> <span>其他</span></div>
+                                </div>
                             </div>
                         </li>
                          <li>
